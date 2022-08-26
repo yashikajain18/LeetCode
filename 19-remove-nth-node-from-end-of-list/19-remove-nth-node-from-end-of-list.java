@@ -21,15 +21,15 @@ class Solution {
         if(head==null) return head;
         
         int len=length(head);
-       
+        
         ListNode temp=head;
         if (len == n) return head.next;
+        
         for(int i=1; i<len-n; i++){
             temp=temp.next;
         }
         
-        if (temp.next!=null) temp.next = temp.next.next;
-        else temp.next = null;
+        if (temp!=null && temp.next!=null) temp.next = temp.next.next;
         return head;
        
     }
