@@ -37,7 +37,7 @@ public class Solution {
         }
         return null;
         
-        //Best Approach
+//         Best Approach
 //         ListNode a = headA, b = headB;
     
 //         while(a!=b){
@@ -47,6 +47,6 @@ public class Solution {
 //           if(b==null) b = headA;
 //           else b = b.next;
 //         }
-        //return b;
+//         return b;
     }
 }
