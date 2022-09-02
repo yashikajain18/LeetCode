@@ -20,15 +20,14 @@ class Solution {
         q.add(root);
         while(!q.isEmpty()){
             int size=q.size();
-            int div=size;
             double sum=0;
-            while(size-->0){
+            for(int i=0; i<size; i++){
                 TreeNode node=q.poll();
                 if(node.left!=null) q.add(node.left);
                 if(node.right!=null) q.add(node.right);
                 sum+=node.val;
             }
-            ans.add(sum/div);
+            ans.add(sum/size);
         }
         return ans;
     }
